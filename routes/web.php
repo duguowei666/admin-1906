@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('admin/reg','Admin\RegController@reg');
+Route::post('admin/do_reg','Admin\RegController@do_reg');
